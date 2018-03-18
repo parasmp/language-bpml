@@ -18,8 +18,32 @@
     -->
 
     <process name="$1">
-
+      <sequence name="$2">
+        <assign to="BPLOCAL/BP_NAME">$1</assign>
+      </sequence> <!-- End $2 -->
     </process>
+    """
+
+  'Sequence':
+    'prefix': 'sequence'
+    'body': """
+    <sequence name="$1">
+      $2
+    </sequence> <!-- End $1 -->
+    """
+
+  'Operation':
+    'prefix': 'operation'
+    'body':"""
+    <operation name="$1">
+      <participant name="$2" />
+      <output message="${3:outmsg}">
+        <assign to="." from="*" />
+      </output>
+      <input message="${4:inmsg}">
+        <assign to="." from="*" />
+      </input>
+    </operation>
     """
 
   'Comment':
@@ -34,12 +58,12 @@
     </process>
     """
 
-  'Sequence':
-    'prefix': 'sequence'
+  'Rule':
+    'prefix': 'rule'
     'body': """
-    <sequence name="$1">
-
-    </sequence>
+    <rule name="$1">
+      <condition>$2</condition>
+    </rule>
     """
 
   'Assign':
@@ -49,3 +73,18 @@
   'Assign All':
     'prefix': 'assign all'
     'body': '<assign to="." from="*" />'
+
+  'Assign Service':
+    'prefix': 'assign service'
+    'body':"""
+    <operation name="AssignService">
+      <participant name="AssignService" />
+      <output message="AssignOutputMessage">
+        <assign to="." from="*" />
+        ${1:<!-- add assign's here -->}
+      </output>
+      <input message="AssignInputMessage">
+        <assign to="." from="*" />
+      </input>
+    </operation>
+    """
