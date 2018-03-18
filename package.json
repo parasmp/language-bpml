@@ -1,0 +1,16 @@
+{
+  "name": "language-bpml",
+  "version": "0.0.1",
+  "description": "Atom support for Business Process Modelling Language (BPML)",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-bpml:toggle"
+  },
+  "repository": "https://github.com/parasmp/language-bpml",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

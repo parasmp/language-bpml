@@ -1,0 +1,51 @@
+# file name: langauge-bpml.cson
+# description: snippets file
+# written by: Paras Patel
+
+'.source.bpml':
+  'New Process':
+    'prefix': 'new'
+    'body':"""
+    <!--
+      Business Process: $1
+      Created For:
+      Created By:
+      Description:
+      Precondition:
+      Postcondition:
+      Runtime:
+      Process Data:
+    -->
+
+    <process name="$1">
+
+    </process>
+    """
+
+  'Comment':
+    'prefix': 'comment'
+    'body': '<!-- $1 -->'
+
+  'Process':
+    'prefix': 'process'
+    'body':"""
+    <process name="$1">
+      $2
+    </process>
+    """
+
+  'Sequence':
+    'prefix': 'sequence'
+    'body': """
+    <sequence name="$1">
+
+    </sequence>
+    """
+
+  'Assign':
+    'prefix': 'assign'
+    'body': '<assign to="$1"${2: from=""}>$3</assign>'
+
+  'Assign All':
+    'prefix': 'assign all'
+    'body': '<assign to="." from="*" />'

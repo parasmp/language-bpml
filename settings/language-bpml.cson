@@ -1,0 +1,7 @@
+'.source.bpml':
+  'editor':
+    'commentStart': '<!-- '
+    'commentEnd': ' -->'
+    'foldEndPattern': '^\\s*(</[^>]+>|[/%]>|-->)\\s*$'
+    'increaseIndentPattern': '^\\s*<(([^!/?]|%)(?!.+?([/%]>|</.+?>))|[%!]--\\s*$)'
+    'decreaseIndentPattern': '^\\s*(</[^>]+>|-->|--%>)'

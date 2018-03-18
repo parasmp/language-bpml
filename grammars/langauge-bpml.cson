@@ -1,0 +1,13 @@
+scopeName: 'source.bpml'
+name: 'BPML'
+fileTypes: [
+  'bpml'
+]
+firstLineMatch: ''
+foldingStartMarker: ''
+foldingStopMarker: ''
+patterns: [
+  {
+    include: 'text.xml'
+  }
+]
