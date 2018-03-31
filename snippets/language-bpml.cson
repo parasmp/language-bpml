@@ -1,7 +1,3 @@
-# file name: langauge-bpml.cson
-# description: snippets file
-# written by: Paras Patel
-
 '.source.bpml':
   'New Process':
     'prefix': 'new'
