@@ -1,16 +1,24 @@
 {
   "name": "language-bpml",
-  "version": "0.0.1",
-  "description": "Atom support for Business Process Modelling Language (BPML)",
+  "version": "0.0.0",
+  "description": "Atom support for IBM Sterling's Business Process Modeling Language",
   "keywords": [
+    "language",
+    "grammar",
+    "bpml",
+    "sterling",
+    "ibm"
   ],
   "activationCommands": {
     "atom-workspace": "language-bpml:toggle"
   },
-  "repository": "https://github.com/parasmp/language-bpml",
+  "homepage": "https://github.com/parasmp/language-bpml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parasmp/language-bpml.git"
+  },
+  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
   }
 }
