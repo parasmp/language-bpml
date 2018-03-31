@@ -1,6 +1,6 @@
 {
   "name": "language-bpml",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Atom support for IBM Sterling's Business Process Modeling Language",
   "keywords": [
     "language",
