@@ -84,3 +84,22 @@
       </input>
     </operation>
     """
+
+  'Choice Statement':
+    'prefix': 'choice'
+    'body':"""
+    <choice name="$1">
+      <select>
+        <case ref="$2" activity="$3"/>
+        <case ref="$2" negative="true" activity="$4"/>
+      </select>
+      <sequence name="$3">
+        $5
+      </sequence> <!-- End $3 -->
+      <sequence name="$4">
+        $6
+      </sequence> <!-- End $4 -->
+    </choice>
+"""
+
+    
